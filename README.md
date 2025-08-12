@@ -49,6 +49,8 @@ By doing so, the system helps businesses:
 
 ---
 
+![Inventory Dashboard](images/dashboard.png)
+
 ## 🛠️ Technologies Used
 - **Microsoft Excel / MySQL** – Data storage
 - **Python (Pandas, NumPy)** – Data analysis
