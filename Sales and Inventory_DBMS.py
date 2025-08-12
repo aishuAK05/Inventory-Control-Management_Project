@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
-
-
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -23,22 +17,10 @@ merged_df = pd.merge(sales_df, products_df, on="product_id")
 merged_df = pd.merge(merged_df, customers_df, on="customer_id")
 merged_df.head()
 
-
-# In[6]:
-
-
 merged_df=merged_df.dropna()
-
-
-# In[7]:
-
 
 fig=px.scatter(merged_df,x="Quantity",y="TotalAmount",size="Quantity")
 fig.show()
-
-
-# In[8]:
-
 
 plt.figure(figsize=(12, 6))
 plt.subplot(2, 2, 1)
@@ -60,10 +42,6 @@ plt.xticks(rotation=45)
 
 plt.tight_layout()
 plt.show()
-
-
-# In[9]:
-
 
 plt.figure(figsize=(12, 6))
 plt.subplot(2, 2, 1)
@@ -93,10 +71,6 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
-
-# In[10]:
-
-
 label_encoder = LabelEncoder()
 merged_df['state_encoded'] = label_encoder.fit_transform(merged_df['State'])
 merged_df['city_encoded'] = label_encoder.fit_transform(merged_df['City'])
@@ -106,36 +80,16 @@ y = merged_df['Quantity']
 # Split data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-
-# In[11]:
-
-
 model = RandomForestRegressor(n_estimators=100, random_state=42)
 model.fit(X_train, y_train)
 
-
-# In[12]:
-
-
 y_pred = model.predict(X_test)
-
-
-# In[13]:
-
 
 mse=mean_squared_error(y_test,y_pred)
 print("Mean Squared Error:",mse)
 
-
-# In[14]:
-
-
 joblib.dump(model, 'trained_model.pkl')
 loaded_model = joblib.load('trained_model.pkl')
-
-
-# In[15]:
-
 
 plt.figure(figsize=(10, 6))
 plt.scatter(X_test.index, y_test, color='blue', label='Actual')  # Use index as x-values
@@ -145,10 +99,6 @@ plt.xlabel('Index')
 plt.ylabel('Quantity')
 plt.legend()
 plt.show()
-
-
-
-# In[ ]:
 
 
 
