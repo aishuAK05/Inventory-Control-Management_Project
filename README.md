@@ -46,10 +46,8 @@ By doing so, the system helps businesses:
 - **Sales & Purchase Tracking** – Record all inventory movements.
 - **Report Generation** – Generate insights and analytics.
 - **Machine Learning Integration** – Predict future stock requirements.
-
+  
 ---
-
-![Inventory Dashboard](images/dashboard.png)
 
 ## 🛠️ Technologies Used
 - **Microsoft Excel / MySQL** – Data storage
