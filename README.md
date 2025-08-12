@@ -49,7 +49,7 @@ By doing so, the system helps businesses:
 
 ---
 
-![Inventory Dashboard](Dashboard/Screenshot 2025-08-12 114556.png)
+![Inventory Dashboard](images/dashboard.png)
 
 ## 🛠️ Technologies Used
 - **Microsoft Excel / MySQL** – Data storage
