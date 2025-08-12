@@ -58,6 +58,28 @@ By doing so, the system helps businesses:
 
 ---
 
+## 📊 Dashboards & Reports
+
+### 📈 Customer Module
+![Sales Overview](dashboards/dashboard1.png)
+
+### 📈 Supplier Module
+![Sales Overview](dashboards/dashboard1.png)
+
+### 📈 Products Module
+![Sales Overview](dashboards/dashboard1.png)
+
+### 📈 Purchase Module
+![Sales Overview](dashboards/dashboard1.png)
+
+### 📦 Sales Order Module
+![Inventory Status](dashboards/dashboard2.png)
+
+### 📉 Inventory Dashboard Module
+![Supplier Performance](dashboards/dashboard3.png)
+
+---
+
 ## 📈 Methodology
 1. **Requirement Analysis** – Understand inventory control needs.
 2. **Data Collection** – Maintain product, supplier, sales, and purchase records.
